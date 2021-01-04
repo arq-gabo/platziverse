@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "DEBUG=platziverse:* ava tests/* --verbose",
+    "test": "DEBUG=platziverse:* nyc --reporter=lcov ava tests/agent-test.js --verbose",
     "setup": "DEBUG=platziverse:* node setup.js"
   },
   "keywords": [],
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "ava": "^3.15.0",
+    "nyc": "^15.1.0",
     "sqlite3": "^5.0.0"
   }
 }
