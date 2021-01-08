@@ -1,0 +1,26 @@
+{
+  "name": "platziverse-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Simple IoT Platform - Agent",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arq-gabo/platziverse.git"
+  },
+  "keywords": [
+    "MIT"
+  ],
+  "author": "José Gabriel Guerra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arq-gabo/platziverse/issues"
+  },
+  "homepage": "https://github.com/arq-gabo/platziverse#readme",
+  "devDependencies": {
+    "standard": "^16.0.3"
+  }
+}
