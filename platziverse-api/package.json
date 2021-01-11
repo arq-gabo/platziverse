@@ -1,0 +1,32 @@
+{
+  "name": "platziverse-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Simple IoT Platform - API",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "start-dev": "DEBUG=platziverse:* nodemon server.js",
+    "lint": "standart"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arq-gabo/platziverse.git"
+  },
+  "author": "José Gabriel Guerra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arq-gabo/platziverse/issues"
+  },
+  "homepage": "https://github.com/arq-gabo/platziverse#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "standart": "^6.1.0"
+  },
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "win-node-env": "^0.4.0"
+  }
+}
