@@ -3,8 +3,9 @@
 const debug = require('debug')('platziverse:api:routes')
 const express = require('express')
 const asyncify = require('express-asyncify')
-const db = require('platziverse-db')
 const auth = require('express-jwt')
+const guard = require('express-jwt-permissions')()
+const db = require('platziverse-db')
 
 const config = require('./config')
 
@@ -67,8 +68,8 @@ api.get('/agent/:uuid', async (req, res, next) => {
 
     res.send(agent)
 })
-
-api.get('/metrics/:uuid', async (req, res, next) => {
+                        
+api.get('/metrics/:uuid', auth(config.auth), guard.check(['metrics:read']), async (req, res, next) => {
     const { uuid } = req.params
 
     debug(`request to /metrics/${uuid}`)
