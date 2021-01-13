@@ -2,7 +2,7 @@ const PlatziverseAgent = require("../");
 
 const agent = new PlatziverseAgent({
   name: 'myapp',
-  username: 'admin',
+  username: 'myuser',
   interval: 2000
 })
 
