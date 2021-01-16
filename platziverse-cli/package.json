@@ -1,0 +1,25 @@
+{
+  "name": "platziverse-cli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Simple IoT PLatform - CLI",
+  "bin": "platziverse.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arq-gabo/platziverse.git"
+  },
+  "author": "José Gabriel Guerra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arq-gabo/platziverse/issues"
+  },
+  "homepage": "https://github.com/arq-gabo/platziverse#readme",
+  "dependencies": {
+    "args": "^5.0.1",
+    "minimist": "^1.2.5",
+    "standard": "^16.0.3"
+  }
+}
