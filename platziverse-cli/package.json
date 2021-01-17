@@ -18,9 +18,9 @@
   },
   "homepage": "https://github.com/arq-gabo/platziverse#readme",
   "dependencies": {
-    "args": "^5.0.1",
     "blessed": "^0.1.81",
-    "blessed-contrib": "^4.8.21"
+    "blessed-contrib": "^4.8.21",
+    "platziverse-agent": "file:../platziverse-agent"
   },
   "devDependencies": {
     "standard": "^16.0.3"
